@@ -32,6 +32,14 @@ import qantas from "./assets/Logo-qantas.png";
 // 
 import Inbox from "./assets/Icon-inbox.svg"; 
 
+  // 
+  import facebook from "./assets/Social-facebook.svg";
+  import instagram from "./assets/Social-instagram.png";
+  import Twitter from "./assets/Social-twitter.svg";
+  import PlayStore from "./assets/Play-Store.svg";
+  import Google from "./assets/Google-Play.svg";
+
+
 const App = () => {
   return (
     <>
@@ -53,7 +61,7 @@ const App = () => {
         </div>
       </div>
       {/*Home Page*/}
-      <div class="w-screen h-[85vh] flex p-8">
+      <div class="w-screen min-h-screen flex p-8">
         <div class="w-1/2 h-full flex flex-col gap-5 justify-start items-start">
           <p class="mt-10 text-xl font-bold text-yellow-300">
             BEST DISTINATIONS AROUND THE WORLD
@@ -83,7 +91,7 @@ const App = () => {
         </div>
       </div>
       {/*      Category  */}
-      <div class="w-screen h-[100vh] flex flex-col justify-center items-center gap-5">
+      <div class="w-screen min-h-screen flex flex-col justify-center items-center gap-5">
         <p>Category</p>
         <h1 class="text-5xl font-bold">We Offer Best Service </h1>
         <div class="w-screen h-2/3 flex gap-10 justify-center items-center">
@@ -119,7 +127,7 @@ const App = () => {
         </div>
       </div>
       {/*  Top Selling  */}
-      <div class="w-screen h-[100vh] flex flex-col justify-center items-center gap-5">
+      <div class="w-screen min-h-screen flex flex-col justify-center items-center gap-5">
         <p>Category</p>
         <h1 class="text-5xl font-bold">Top Destinations</h1>
         <div class="w-screen h-2/3 flex justify-center gap-16">
@@ -166,7 +174,7 @@ const App = () => {
       </div>
 
        {/* Grace trip */}
-        <div class="w-screen h-[100vh] flex">
+        <div class="w-screen min-h-screen flex">
           <div class="w-1/2 h-full flex flex-col justify-center items-start p-24 gap-5">
           <p class="text-lg">Easy And Fast</p>
          <p class="font-sans flex flex-wrap font-bold text-5xl">Book your Next Trip in 3 Easy steps</p>
@@ -269,14 +277,19 @@ const App = () => {
        </div>
 
         <div class="w-1/5 h-full flex flex-col justify-center items-center gap-4 ">
-        <p class="text-2xl">Company</p>
-        <div class="flex flex-col">
-         <button class="cursor-pointer">About</button>
-         <button class="cursor-pointer">Careers</button>
-         <button class="cursor-pointer">Mobile</button>
+        <div class="flex w-2/3 h-10 justify-evenly">
+        <img src={facebook}  class="cursor-pointer" />
+        <img src={instagram} class="cursor-pointer"  />
+        <img src={Twitter}  class="cursor-pointer" />
+        </div>
+        <p class="text-2xl font-serif text-gray-300">Discover our App</p>
+        <div class="flex w-2/3 h-10 justify-evenly">
+        <img src={PlayStore} class="cursor-pointer" />
+        <img src={Google} class="cursor-pointer"  />
         </div>
        </div>
       </div>
+
       <div class="h-1/5 w-screen flex justify-center items-center">
        <p>All rights reserved@jadoo.co</p>
       </div>
