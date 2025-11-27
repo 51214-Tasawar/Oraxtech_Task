@@ -8,10 +8,8 @@ import Events from "./assets/events.jpg";
 import Setting from "./assets/setting.svg";
 
 // Top Selling
-import London from "./assets/London.jpg";
+import London from "./assets/London1.jpg";
 import Europe from "./assets/Europe Visit.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import Rome from "./assets/Rome.jpg";
 // Trip to Grace
 import greece from "./assets/Trip-to-greece.png";
@@ -21,6 +19,7 @@ import rome from "./assets/Trip-to-rome.png";
 import reachairport from "./assets/Icon-reachairport.svg";
 import chosedestination from "./assets/Icon-chosedestination.svg";
 import makepayment from "./assets/Icon-makepayment.svg";
+import Location from "./assets/Location-mark.svg";
 
 // Choose Destinations div potion 
 import alitalia from "./assets/Logo-alitalia.png";
@@ -139,33 +138,33 @@ const App = () => {
                 <p class="font-sans">$5.6K</p>
               </div>
               <div class="flex justify-start items-center p-3">
-                <FontAwesomeIcon icon={faLocationArrow} size="1x" />
+                <img src={Location} />
                 <p>15days trip</p>
               </div>
             </div>
           </div>
           <div class="w-[45vh] h-full">
-            <img src={London} alt="Rome pic" class="w-full h-3/4 rounded-md" />
+            <img src={London} alt="Rome pic" class="w-full h-52 rounded-md" />
             <div class="flex flex-col">
               <div class="flex justify-between p-2">
                 <p class="font-serif">London</p>
                 <p class="font-sans">$5.5K</p>
               </div>
               <div class="flex justify-start items-center p-3 ">
-                <FontAwesomeIcon icon={faLocationArrow} size="1x" />
+                <img src={Location} />
                 <p>12 days trip</p>
               </div>
             </div>
           </div>
           <div class="w-[45vh] h-full">
-            <img src={Europe} alt="Rome pic" class="w-full h-3/4 rounded-md" />
+            <img src={Europe} alt="Rome pic" class="w-full h-52 rounded-md" />
             <div class="flex flex-col">
               <div class="flex justify-between p-2">
                 <p class="font-serif">Full Europe</p>
                 <p class="font-sans">$15000K</p>
               </div>
               <div class="flex justify-start p-3">
-                <FontAwesomeIcon icon={faLocationArrow} size="1x" />
+                <img src={Location} />
                 <p>30 days trip</p>
               </div>
             </div>
