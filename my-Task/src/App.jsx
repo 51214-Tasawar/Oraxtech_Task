@@ -1,3 +1,4 @@
+import Logo from "./assets/Jadoo-travel-logo.svg"
 import pic1 from "./assets/pic1.jpg";
 import btn from "./assets/btn.svg";
 
@@ -12,6 +13,24 @@ import Europe from "./assets/Europe Visit.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import Rome from "./assets/Rome.jpg";
+// Trip to Grace
+import greece from "./assets/Trip-to-greece.png";
+import rome from "./assets/Trip-to-rome.png";
+
+// Choose Destinations 
+import reachairport from "./assets/Icon-reachairport.svg";
+import chosedestination from "./assets/Icon-chosedestination.svg";
+import makepayment from "./assets/Icon-makepayment.svg";
+
+// Choose Destinations div potion 
+import alitalia from "./assets/Logo-alitalia.png";
+import avon from "./assets/Logo-avon.png";
+import expedia from "./assets/Logo-expedia.png";
+import jetstar from "./assets/Logo-jetstar.png";
+import qantas from "./assets/Logo-qantas.png";
+
+// 
+import Inbox from "./assets/Icon-inbox.svg"; 
 
 const App = () => {
   return (
@@ -19,9 +38,9 @@ const App = () => {
       {/* Nevigation Bar  */}
       <div class="w-screen h-20 flex ">
         <div class="w-1/2 h-full flex items-center">
-          <h1 class="font-semibold text-3xl ml-12">Jadoo</h1>
+          <img src={Logo} alt="Jadoo Logo" class="px-8" />
         </div>
-        <div class="w-1/2 h-full flex items-center gap-7">
+        <div class="w-1/2 h-full flex items-center gap-5">
           <a class="">Destinations</a>
           <a>Hotels</a>
           <a>Flights</a>
@@ -34,8 +53,8 @@ const App = () => {
         </div>
       </div>
       {/*Home Page*/}
-      <div class="w-screen h-[85vh] flex ml-10">
-        <div class="w-1/2 h-full flex flex-col ml-1 gap-5 justify-start items-start">
+      <div class="w-screen h-[85vh] flex p-8">
+        <div class="w-1/2 h-full flex flex-col gap-5 justify-start items-start">
           <p class="mt-10 text-xl font-bold text-yellow-300">
             BEST DISTINATIONS AROUND THE WORLD
           </p>
@@ -59,7 +78,7 @@ const App = () => {
             </button>
           </div>
         </div>
-        <div class="w-1/2 h-full mr-16">
+        <div class="w-1/2 h-full">
           <img src={pic1} alt="pic1" />
         </div>
       </div>
@@ -146,7 +165,122 @@ const App = () => {
         </div>
       </div>
 
-       {/*  */}
+       {/* Grace trip */}
+        <div class="w-screen h-[100vh] flex">
+          <div class="w-1/2 h-full flex flex-col justify-center items-start p-24 gap-5">
+          <p class="text-lg">Easy And Fast</p>
+         <p class="font-sans flex flex-wrap font-bold text-5xl">Book your Next Trip in 3 Easy steps</p>
+          <div class=" w-full h-1/5 flex">
+           <div class="w-1/5 flex items-start justify-center">
+           <img src={chosedestination} />
+           </div>
+           <div class="4/5 flex flex-col flex-wrap">
+           <p class="font-semibold text-xl">Choose Destination</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+           </div>
+          </div>
+
+            <div class=" w-full h-1/5 flex">
+           <div class="w-1/5 flex items-start justify-center">
+           <img src={makepayment} />
+           </div>
+           <div class="4/5 flex flex-col flex-wrap">
+           <p class="font-semibold text-xl">Choose Destination</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+           </div>
+          </div>
+
+          <div class=" w-full h-1/5 flex">
+           <div class="w-1/5 flex items-start justify-center">
+           <img src={reachairport} />
+           </div>
+           <div class="4/5 flex flex-col flex-wrap">
+           <p class="font-semibold text-xl">Choose Destination</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+           </div>
+          </div>
+
+         </div>
+         <div class="w-1/2 flex justify-center items-center">
+         <img src={greece} />
+         <img src={rome} class="absolute ml-52 mt-36 z-10 w-64"/>
+         </div>
+        </div>
+
+        {/* Landing Page ... ; */}
+        <div class="w-screen h-[35vh] flex justify-evenly items-center">
+        <img src={avon} />
+        <img src={jetstar} />
+        <img src={expedia} />
+        <img src={qantas} />
+        <img src={alitalia} />
+        </div>
+        
+        <div class="w-screen h-[60vh]  flex justify-center items-center">
+        <div class="w-4/5 h-4/5 bg-gray-200 rounded-tl-3xl flex flex-col justify-center items-center gap-8">
+        <p class="font-bold text-2xl text-center r w-3/5">Subscribe to get information,latest news and other interestingoffers about Cobham</p>
+        <div class="w-1/2 h-12  flex gap-4">
+        <div class="w-3/4 h-full bg-white  flex justify-start items-center px-5 gap-2">
+         <img src={Inbox} class="size-8" />
+         <p class="font-serif">Your Email ...</p>
+        </div>
+        <button class="font-serif text-1xl flex items-center justify-center bg-red-400 text-white p-5"> Subscribe </button>
+        </div>
+        </div>
+        </div>
+
+
+     {/*  */}
+      <div class="w-screen h-[65vh] ">
+      <div class="w-full h-4/5 flex justify-evenly">
+
+       <div class="w-1/5 h-full flex flex-col justify-center gap-8 ">
+        <p class="text-5xl font-xl px-7">Jadoo .</p>
+        <p class="font-sans text-1xl px-7">Book your trip in minute, get full control for much longer.</p>
+       </div>
+
+        <div class="w-1/5 h-full flex flex-col justify-center items-center gap-4 ">
+        <p class="text-2xl">Company</p>
+        <div class="flex flex-col">
+         <button class="cursor-pointer">About</button>
+         <button class="cursor-pointer">Careers</button>
+         <button class="cursor-pointer">Mobile</button>
+        </div>
+       </div>
+
+
+
+        <div class="w-1/5 h-full flex flex-col justify-center items-center gap-4 ">
+        <p class="text-2xl">Contact</p>
+        <div class="flex flex-col">
+         <button class="cursor-pointer">Help / FAQ</button>
+         <button class="cursor-pointer">Press</button>
+         <button class="cursor-pointer">Affiliates</button>
+        </div>
+       </div>
+
+        <div class="w-1/5 h-full flex flex-col justify-center items-center gap-4 ">
+        <p class="text-2xl">More</p>
+        <div class="flex flex-col">
+         <button class="cursor-pointer">Airline fees</button>
+         <button class="cursor-pointer">Airline</button>
+         <button class="cursor-pointer">Low fare tips</button>
+        </div>
+       </div>
+
+        <div class="w-1/5 h-full flex flex-col justify-center items-center gap-4 ">
+        <p class="text-2xl">Company</p>
+        <div class="flex flex-col">
+         <button class="cursor-pointer">About</button>
+         <button class="cursor-pointer">Careers</button>
+         <button class="cursor-pointer">Mobile</button>
+        </div>
+       </div>
+      </div>
+      <div class="h-1/5 w-screen flex justify-center items-center">
+       <p>All rights reserved@jadoo.co</p>
+      </div>
+      </div>
 
     </>
   );
