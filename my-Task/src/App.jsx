@@ -59,7 +59,7 @@ const App = () => {
           </select>
         </div>
       </div>
-      {/*Home Page*/}
+      {/*Hero Section*/}
       <div class="w-screen min-h-screen flex p-8">
         <div class="w-1/2 h-full flex flex-col gap-5 justify-start items-start">
           <p class="mt-10 text-xl font-bold text-yellow-300">
@@ -89,7 +89,7 @@ const App = () => {
           <img src={pic1} alt="pic1" />
         </div>
       </div>
-      {/*      Category  */}
+      {/* Portion 1 */}
       <div class="w-screen min-h-screen flex flex-col justify-center items-center gap-5">
         <p>Category</p>
         <h1 class="text-5xl font-bold">We Offer Best Service </h1>
@@ -125,7 +125,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      {/*  Top Selling  */}
+      {/*  Portion2  */}
       <div class="w-screen min-h-screen flex flex-col justify-center items-center gap-5">
         <p>Category</p>
         <h1 class="text-5xl font-bold">Top Destinations</h1>
@@ -172,7 +172,7 @@ const App = () => {
         </div>
       </div>
 
-       {/* Grace trip */}
+       {/* Portion 3 */}
         <div class="w-screen min-h-screen flex">
           <div class="w-1/2 h-full flex flex-col justify-center items-start p-24 gap-5">
           <p class="text-lg">Easy And Fast</p>
@@ -214,7 +214,7 @@ const App = () => {
          </div>
         </div>
 
-        {/* Landing Page ... ; */}
+        {/* Portion4 */}
         <div class="w-screen h-[35vh] flex justify-evenly items-center">
         <img src={avon} />
         <img src={jetstar} />
@@ -237,7 +237,7 @@ const App = () => {
         </div>
 
 
-     {/*  */}
+     {/* Portion5  */}
       <div class="w-screen h-[65vh] ">
       <div class="w-full h-4/5 flex justify-evenly">
 
